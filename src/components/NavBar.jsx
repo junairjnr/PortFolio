@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../assets/logo white.png';
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
-import { HiOutlineMai, HiOutlineMail } from 'react-icons/hi';
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaFabook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const NavBar = () => {
@@ -9,18 +9,18 @@ const NavBar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 '>
             <div>
                 <img src={Logo} alt='logo' className='w-16' />
             </div>
 
             {/* menu */}
-            <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Works</li>
-                <li>Contact</li>
+            <ul className='hidden md:flex '>
+                <li className='hover:text-gray-500'>Home</li>
+                <li className='hover:text-gray-500'>About</li>
+                <li className='hover:text-gray-500'>Skills</li>
+                <li className='hover:text-gray-500'>Works</li>
+                <li className='hover:text-gray-500'>Contact</li>
             </ul>
 
             {/* hamburger */}
@@ -28,7 +28,7 @@ const NavBar = () => {
                 onClick={handleClick}
                 className='md:hidden z-10'>
                 {!nav ? <FaBars /> : <FaTimes />}
-            </div>
+            </div> 
 
             {/* Mobile Menu */}
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col items-center justify-center'}>
