@@ -7,14 +7,17 @@ const Contact = () => {
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
       <form
+        method="POST"
+        action="https://getform.io/f/a83daee0-dfe1-4e47-affd-349d559fd341"
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-400 text-gray-300 hover:border-gray-400">
             Contact
           </p>
           <p className="text-gray-300 py-4">
-            // Shoot me an email -
+            Submit the form below or shoot me an email -
+            junairjunu869@gmail.com
           </p>
         </div>
         <input
@@ -35,11 +38,9 @@ const Contact = () => {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <a href="mailto:junairjunu869@gmail.com">
-          <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
-            Let's Collaborate
-          </button>
-        </a>
+        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
+          Let's Collaborate
+        </button>
       </form>
     </div>
   );
