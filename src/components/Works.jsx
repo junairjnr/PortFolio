@@ -1,5 +1,6 @@
 import React from "react";
 import WorkImage from "../assets/social.png";
+import Portfolio from "../assets/Portfolio.jpg";
 
 const Works = () => {
   return (
@@ -39,6 +40,33 @@ const Works = () => {
             </div>
           </div>
 
+{/*------------------------------------------------------------- */}
+          <div
+            style={{ backgroundImage: `url(${Portfolio})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center
+           mx-auto content-div"
+          >
+            {/*Hover effect */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-black tracking-wider">
+                PortFolio
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://port-folio-two-omega.vercel.app/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://github.com/junairjnr/PortFolio">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+{/*------------------------------------------------------------- */}
 
         </div>
       </div>
